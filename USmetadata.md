@@ -2,7 +2,7 @@
 
 **Where to Find Data**
 
-The U.S. is currently in a transition period as federal agencies adapt to the new requirements of the [Managing Information as an Asset](http:/project-open-data.github.io) memo. On November, 9, 2013 you can access all federal government data at data.gov, and government data owned/maintained by specific federal agencies by going to *agency.gov*/data.json. Until then, much, but not all, government data will be available at these locations, described using the metadata below.
+The U.S. is currently implementing a new Open Data Policy, as outlined in the [Managing Information as an Asset](http:/project-open-data.github.io) memorandum. On November, 9, 2013 you can access all public federal government data at data.gov, and government data owned/maintained by specific federal agencies by going to *agency.gov*/data.json. Until then, much, but not all, public government data will be available at these locations, described using the metadata below.
 
 **Metadata Details**
 
