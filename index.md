@@ -5,14 +5,14 @@ G8_Metadata_Mapping
 
 For more details about each member's schema, click its column heading.
 
-Concept | data.gov | data.gov.uk
-------- | -------- | -----------
-- | [Details](/USmetadata.md) | 
-*Contact Information* | |
-Contact Person | person | 
-Contact Email | mbox | 
-Organisation (Owner) | publisher | 
-Publisher | - |
+Concept | data.gov | data.gov.uk | data.gouv.fr | data.gc.ca | open-data.europa.eu/open-data | govdata.de |datameti.go.jp/data| 
+------- | -------- | ------------|------------- |------------|-------------------------------|------------|-------------------|
+- | [Details](/USmetadata.md) | Details |
+*Contact Information* | | |
+Contact Person | person | Editor|
+Contact Email | mbox | Institution email|
+Organisation (Owner) | publisher | Publisher (institution)|
+Publisher | - | |
 Author | - |
 Author Email | - |
 Maintainer | - |
