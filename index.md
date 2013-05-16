@@ -1,15 +1,23 @@
 G8_Metadata_Mapping
 ===================
 
-**Metadata Mapping Across Members**
+**Metadata Mapping Across G8 Members**
 
-For more details about each member's schema, click its column heading.
+To go to a member's portal, click the link on the heading. (1.)
 
- | [US] (http://www.data.gov) | [UK] (http://www.data.gov.uk) | [France] (http://www.data.gouv.fr) | [Canada] (http://www.data.gc.ca) | [EU] (http://www.open-data.europa.eu/open-data) | [Germany] (http://www.govdata.de) | [Japan] (http:www.datameti.go.jp/data) | [Italy] (http://www.dati.gov.it) 
-------- | -------- | ------------|------------- |------------|-------------------------------|------------|-------------------|-----------
-1. Member portal detail page | [US detail](/USmetadata.md) | UK detail | France detail | Canada detail | EU detail | Germany detail | Japan detail | Italy detail |
-Concept ||
-2. Worked example: Licence | license | Licence | Licence | Licence | Licence | Nutzungs- bestimmungen | ライセンス | Licenza
+For more details about each member's schema, click the link to 'Detail'. (2.)
+
+The general metadata concepts are listed in the left-hand column (3.)
+
+A worked example is shown for 'licence', showing the term used for this by each G8 Member (4.)
+
+
+ | [(1.) US] (http://www.data.gov) | [UK] (http://www.data.gov.uk) | [France] (http://www.data.gouv.fr) | [Canada] (http://www.data.gc.ca) | [EU] (http://www.open-data.europa.eu/open-data) | [Germany] (http://www.govdata.de) | [Japan] (http:www.datameti.go.jp/data) | [Italy] (http://www.dati.gov.it) 
+------- | -------- | ------------|------------- |------------|-------------|------------|-----------|-----------
+ | [(2.) US detail](/USmetadata.md) | UK detail | France detail | Canada detail | EU detail | Germany detail | Japan detail | Italy detail |
+||
+(3.) **Concepts** |
+(4.) Licence | license | Licence | Licence | Licence | Licence | Nutzungs- bestimmungen | ライセンス | Licenza
 *Contact Information* | | |
 Contact Person | person | Editor|
 Contact Email | mbox | Institution email|
