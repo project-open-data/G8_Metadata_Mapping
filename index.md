@@ -5,9 +5,11 @@ G8_Metadata_Mapping
 
 For more details about each member's schema, click its column heading.
 
-Concept | data.gov | data.gov.uk | data.gouv.fr | data.gc.ca | open-data.europa.eu/open-data | govdata.de |datameti.go.jp/data| 
-------- | -------- | ------------|------------- |------------|-------------------------------|------------|-------------------|
-- | [Details](/USmetadata.md) | Details |
+ | [US] (http://www.data.gov) | [UK] (http://www.data.gov.uk) | [France] (http://www.data.gouv.fr) | [Canada] (http://www.data.gc.ca) | [EU] (http://www.open-data.europa.eu/open-data) | [Germany] (http://www.govdata.de) | [Japan] (http:www.datameti.go.jp/data) | [Italy] (http://www.dati.gov.it) 
+------- | -------- | ------------|------------- |------------|-------------------------------|------------|-------------------|-----------
+1. Member portal detail page | [US detail](/USmetadata.md) | UK detail | France detail | Canada detail | EU detail | Germany detail | Japan detail | Italy detail |
+Concept ||
+2. Worked example: Licence | license | Licence | Licence | Licence | Licence | Nutzungs- bestimmungen | ライセンス | Licenza
 *Contact Information* | | |
 Contact Person | person | Editor|
 Contact Email | mbox | Institution email|
@@ -50,7 +52,6 @@ Data quality | dataQuality |
 Granularity | granularity |
 *Supplemental Information* | |
 Documentation | references |  
-Licence | license | 
 Copyright | - |
 Size | size | 
 Download URL | accessURL |
