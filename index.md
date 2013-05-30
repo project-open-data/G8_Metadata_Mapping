@@ -19,12 +19,6 @@ This shows both the human-readable term (H) displayed to users of the portal (5.
 
 **Detailed G8 metadata mapping**
 
-To go to a member's portal, click the link on the header row. (1.)
-
-For more details about each member's schema, click the link to 'Detail'. (2.)
-
-The general metadata concepts are listed in the left-hand column (1.)
-
 The terms below have a number which is only used within this Github mapping. It allows you to understand where the same term is used between this index page and the more detailed explanation of metadata used by each Member. 
 
 The index is as follows:
@@ -39,16 +33,21 @@ The index is as follows:
 
 5. Distribution information (i.e. information relating to the resource e.g. size, format, language)
 
+To go to a member's portal, click the link on the header row. (A.)
 
- (1.)|[US](http://www.data.gov)|[UK](http://www.data.gov.uk)|[France](http://www.data.gouv.fr)|[Canada](http://www.data.gc.ca)|[EU](http://www.open-data.europa.eu/open-data)|[Germany](http://www.govdata.de)|[Japan](http:www.datameti.go.jp/data)|[Italy](http://www.dati.gov.it)|Russian Federation*)
+For more details about each member's schema, click the link to 'Detail'. (B.)
+
+The general metadata concepts are listed in the left-hand column (A.)
+
+ (A.)|[US](http://www.data.gov)|[UK](http://www.data.gov.uk)|[France](http://www.data.gouv.fr)|[Canada](http://www.data.gc.ca)|[EU](http://www.open-data.europa.eu/open-data)|[Germany](http://www.govdata.de)|[Japan](http:www.datameti.go.jp/data)|[Italy](http://www.dati.gov.it)|Russian Federation*
 -----|------|-----|-----|-----|-----|-----|------|-----|-----
- **(2.)**|[US detail](/USmetadata.md)|UK detail|France detail|Canada detail|EU detail|Germany detail|Japan detail|Italy detail|RF detail - *currently no single portal
+ **(B.)**|[US detail](/USmetadata.md)|UK detail|France detail|Canada detail|EU detail|Germany detail|Japan detail|Italy detail|RF detail - *currently no single portal
 ||
  **Concepts** |
 *1. Contact Information*| | |
-Contact Person|person|Editor|
-Contact Email|mbox|Institution email|
-Organisation (Owner)|publisher|Enquiries / FOI Contact|
+1.1 Contact Person|person|Editor|
+1.2 Contact Email|mbox|Institution email|
+1.3 Organisation (Owner)|publisher|Enquiries / FOI Contact|
 Publisher|-||
 Author| - |
 Author Email| - |
