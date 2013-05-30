@@ -3,22 +3,49 @@ G8_Metadata_Mapping
 
 **Metadata Mapping Across G8 Members**
 
+This page shows the mapping between the metadata on datasets published by G8 Membersthrough their open data portals. 
+
+Below is an example of the mapping for the metadata term 'licence', i.e. the licence which specifies the terms underwhich a published open data set can be used.
+
+This shows both the human-readable term (H) displayed to users of the portal (5.1H) as well as the machine-readable term (M) used in the technical backend of the portal, for developers (5.1M)
+
+**Example of mapping - 'licence'**
+
+ **Concepts** |**US**|**UK**|**France**|**Canada**|**EU**|**Germany**|**Japan**|**Italy**|**Russian Federation**|
+-----|------|-----|-----|-----|-----|-----|------|-----|-----
+5.1H Licence|license|Licence|Licence|Licence|Licence|Nutzungs- bestimmungen|ライセンス|Licenza|Условия использования набора данных|
+5.1M License|license_id|License_id||Licence_id|License_id|License_id|License_id|field_Licenza||
+
+
+**Detailed G8 metadata mapping**
+
 To go to a member's portal, click the link on the header row. (1.)
 
 For more details about each member's schema, click the link to 'Detail'. (2.)
 
 The general metadata concepts are listed in the left-hand column (1.)
 
-A worked example is shown for 'licence', showing both the human-readable term (H) displayed to users of the portal (3.) as well as the machine-readable term (M) used in the technical backend of the portal, for developers (4.)
+The terms below have a number which is only used within this Github mapping. It allows you to understand where the same term is used between this index page and the more detailed explanation of metadata used by each Member. 
+
+The index is as follows:
+
+1. About the contact person, office or institution who has a role in relation to the data (e.g. owner, publisher, contact etc)
+
+2. About the dataset (e.g. unique identifier, frequency of update, related keywords/tags etc)
+
+3. Extent of the dataset (i.e. geographic area it covers e.g. period of time it covers, detail of data etc)
+
+4. Supplemental information (i.e. other core useful information relating to the dataset/resource e.g. contextual documentation)
+
+5. Distribution information (i.e. information relating to the resource e.g. size, format, language)
+
 
  (1.)|[US](http://www.data.gov)|[UK](http://www.data.gov.uk)|[France](http://www.data.gouv.fr)|[Canada](http://www.data.gc.ca)|[EU](http://www.open-data.europa.eu/open-data)|[Germany](http://www.govdata.de)|[Japan](http:www.datameti.go.jp/data)|[Italy](http://www.dati.gov.it)|Russian Federation*)
 -----|------|-----|-----|-----|-----|-----|------|-----|-----
  **(2.)**|[US detail](/USmetadata.md)|UK detail|France detail|Canada detail|EU detail|Germany detail|Japan detail|Italy detail|RF detail - *currently no single portal
 ||
  **Concepts** |
-(3.)Licence H|license|Licence|Licence|Licence|Licence|Nutzungs- bestimmungen|ライセンス|Licenza|Условия использования набора данных|
-(4.)License M|license_id|License_id||Licence_id|License_id|License_id|License_id|field_Licenza||
-*Contact Information*| | |
+*1. Contact Information*| | |
 Contact Person|person|Editor|
 Contact Email|mbox|Institution email|
 Organisation (Owner)|publisher|Enquiries / FOI Contact|
@@ -27,7 +54,7 @@ Author| - |
 Author Email| - |
 Maintainer| - |
 Maintainer Email| - |
-*Dataset Information*| |
+*2. Dataset Information*| |
 Unique Identifier|identifier|
 Release Date|issued| 
 Modified| - |
@@ -37,7 +64,7 @@ Keyword|keyword|
 Frequency of Update|accrual- Periodicity|
 Title|title| 
 Category | theme |
-*Extent* | |
+*3. Extent* | |
 Spatial Coverage|spatial|
 Spatial Type| - |
 Spatial Coordinates| - |
@@ -58,8 +85,10 @@ Temporal and spatial comparability| - |
 Periodicity of data dissemination| - |
 Data quality|data- Quality|
 Granularity|granularity|
-*Supplemental Information* | |
+*4. Supplemental Information* | |
 Documentation|references|  
+*5. Distribution Information* | |
+Licence| |
 Copyright| - |
 Size | size | 
 Download URL|access- URL|
@@ -71,4 +100,5 @@ API Endpoint|webService|
 RSS Feed|feed|
 Data Dictionary|data- Dictionary|
 System of Records|systemOf- Records|
+
 
