@@ -45,7 +45,8 @@ The general metadata concepts are listed in the left-hand column (A.)
 ||
  **Concepts** |
 *1. Contact Information*| | |
-1.1 Contact Person|person|Editor|
+1.1H Person|Contact Name||
+1.1M Person|maintainer||
 1.2 Contact Email|mbox|Institution email|
 1.3 Organisation (Owner)|publisher|Enquiries / FOI Contact|
 1.4 Publisher|-||
