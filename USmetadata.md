@@ -127,37 +127,6 @@ US-specific RSS Feed | feed | No | (0,1) | URL for an RSS feed that provides acc
 US-specific Data Dictionary | dataDictionary  | If applicable  |(1,1) | URL to the data dictionary for the dataset or API. Note that documentation other than a Data Dictionary can be referenced using Related Documents as shown in the expanded fields.   |   URL
 US-specific System of Records    | systemOfRecords  | No  | (0,1)  | URL to the System of Records related to this dataset.  |  URL
 
-
-Concept|CKAN - Level 1|CKAN - Level 2|CKAN - Level 3|Schema.org|DCAT|ADMS|VoID|Other (e.g. Dublin Core, Foaf, RDF, RDFa Lite)|RDFa Lite 1.1
-------- | ----- | -------- | -------- | -------- | ----- | -------|------|-----|----|---|---
-Title | Title | title | title |  dcterms:title | sdo:name
-Description | Description | description | notes | dcterms:description | sdo:description 
-Keyword | Tags | keyword |  tags |  dcat:keyword |  sdo:keywords 
-Last Updated  | Last Update  |  modified | revision_timestamp  |  dcterms:modified |  sdo:dateModified   
-Organisation (Owner)  | Publisher  |  publisher | owner_org  | dcat:publisher  |  sdo:publisher
-Contact Person  | Contact Name  | person  | maintainer  | foaf:person  |  sdo:person  
-Contact Email  | Contact Email | mbox |  maintainer_email |  foaf:mbox |   -
-Unique Identifier  | Unique Identifier  | identifier  |  id | dcterms:identifier   |  -   
-Public Access Level  | Public Access Level  | accessLevel  | -  | -  | -   
-Data Dictionary | Data Dictionary  |  dataDictionary |  dataDict |  dcat:dataDictionary | -   
-Download URL | Download URL | accessURL  |  res_url | dcat:accessURL   |  sdo:contentUrl   
-API Endpoint | Endpoint | webService  | res_url  |  dcat:webService* | sdo:url
-Format |Format |  format|  res_format | dcterms:format  | sdo:encodingFormat   
-License   | License   | license  | license_id   | dcterms:license  | -   
-Spatial Coverage |  Spatial | spatial  | spatial |  dcterms:spatial | ds:spatialCoverage   
-Temporal Coverage | temporal  | temporal  | -  | dcterms:temporal  |  ds:temporalCoverage   
-Release Date    | Release Date  | issued  | -  |  dcterms:issued | sdo:datePublished   
-Frequency of Update   | Frequency  |  accrualPeriodicity |  -|  dcterms:accrualPeriodicity | -  
-Language    | Language  | language  | -  |  dcat:language | sdo:inLanguage  
-Granularity    |  Granularity | granularity  | -  | dcat:granularity  | -   
-Data Quality    | Data Quality  | dataQuality  | -  | xsd:boolean  |  -   
-Category    | Category  | theme  | groups  |  dcat:theme |  sdo:about   
-Documentation | Related Documents  |  references | resources |  dcterms:references | -   
-Size    | Size  | size  | -  |  dcat:size | sdo:contentSize   
-Homepage URL    | Homepage URL  | landingPage  |  url | dcat:landingPage  | sdo:url   
-RSS Feed | RSS Feed  |feed | res_url | dcat:feed | sdo:url
-System of Records    |  System of Records | systemOfRecords  | -  | -  |  -   
-
 **Example JSON Excerpt**
 
 [
