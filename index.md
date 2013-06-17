@@ -33,6 +33,10 @@ The index is as follows:
 
 5. Distribution information (i.e. information relating to the resource e.g. size, format, language)
 
+'H' denotes the 'human-readable' label; 'M' the 'machine-readable' label. 
+
+The metadata relates to datasets, unless the index number also has an 'R' in brackets, in which case it refers to a 'resource'.
+
 To go to a member's portal, click the link on the header row. (A.)
 
 For more details about each member's schema, click the link to 'Detail'. (B.)
