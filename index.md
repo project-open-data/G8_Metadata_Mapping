@@ -53,7 +53,7 @@ The general metadata concepts are listed in the left-hand column (A.)
 1.1.H Person	|	Contact Name	|	-	|	-	|	-	|	Contact Name	|	Ansprechpartner	|	-	|	-	|	Ответственное лицо	|
 1.1.M Person	|	maintainer	|	-	|	-	|	-	|	contact_name	|	extras->contacts->name	|	-	|	-	|	Responsible	|
 1.2.H Contact Email - Publisher	|	Contact Email	|	Email / phone	|	Page producteur	|	Email	|	Contact / Email	|	Ansprechpartner: E-Mail	|	-	|	-	|	Электронный адрес ответственного лица	|
-1.2.M Contact Email - Publishers	|	maintainer_email	|	Package.contact-email / contact-phone	|	-	|	author_email	|	contact_email	|	extras->contacts->email	|	-	|	-	|	Responsible Email	|
+1.2.M Contact Email - Publisher	|	maintainer_email	|	Package.contact-email / contact-phone	|	-	|	author_email	|	contact_email	|	extras->contacts->email	|	-	|	-	|	Responsible Email	|
 1.2.H Contact Email - Dataset	|	-	|	Email / phone	|	Poser la première question/Poser une question	|	-	|	-	|	-	|	-	|	Mail del Funzionario/Unità organizzativa	|	-	|
 1.2.M Contact Email - Dataset	|	-	|	Group.contact-email / contact-phone	|	-	|	-	|	-	|	-	|	-	|	field_email_rif	|	-	|
 1.3.H Organisation (Owner)	|	Publisher	|	Enquiries / FOI Contact	|	Producteur de données	|	(=Publisher)	|	Contact Point	|	(= Maintainer OR author)	|	-	|	Ente gestore	|	Владелец набора данных	|
