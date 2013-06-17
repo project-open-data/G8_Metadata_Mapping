@@ -12,11 +12,11 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 1.1 Person  | person | Yes | (1,1) | Contact person’s name for the asset.  |   Name should be formatted as Last, First
 1.2 Contact Email  | mbox  | Yes | (1,1)  | Contact person’s email address.  |   Email address
 1.3 Organisation (Owner) | publisher  | Yes |  (1,1) |  The publishing agency. |   Departments and multi-unit agencies may use this field to describe which subordinate agency published this dataset.
-1.4 -|-|-|-|-|-|-|-|-|-|
-1.5 -|-|-|-|-|-|-|-|-|-|
-1.6 -|-|-|-|-|-|-|-|-|-|
-1.7 -|-|-|-|-|-|-|-|-|-|
-1.8 -|-|-|-|-|-|-|-|-|-|
+1.4 Publisher|-|-|-|-|-|-|-|-|-|
+1.5 Author|-|-|-|-|-|-|-|-|-|
+1.6 Author Email|-|-|-|-|-|-|-|-|-|
+1.7 Maintainer|-|-|-|-|-|-|-|-|-|
+1.8 Maintainer Email|-|-|-|-|-|-|-|-|-|
 2 *Dataset information*|||||||||
 2.1 Unique Identifier|identifier|-|-|-|-|-|-|-|-|
 2.2 Release Date    | issued  | No  | (0,1)  | Date of formal issuance.  |    Date (YYYY-MM-DD)
@@ -49,18 +49,21 @@ GAP -|-|-|-|-|-|-|-|-|-|
 3.18 Periodicity of data dissemination|-|-|-|-|-|-|-|-|-|
 3.19 Data Quality    | dataQuality | No  | (0,1)  |  Whether the dataset meets the agency’s Information Quality Guidelines. | Boolean (true/false)    
 3.20 Granularity    | granularity  | No  | (0,1)   | Level of granularity of the dataset.  |    Typically geographical or temporal.
-Public Access Level  | accessLevel  | Yes  | (1,1) |  The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: Public (is or could be made publicly available), Restricted (available under certain conditions), or Private (never able to be made publicly available)  |   Must be one of the following: Public, Restricted, Private
-Data Dictionary | dataDictionary  | If applicable  |(1,1) | URL to the data dictionary for the dataset or API. Note that documentation other than a Data Dictionary can be referenced using Related Documents as shown in the expanded fields.   |   URL
-Download URL | accessURL  | If applicable  |  (1,1) |  URL providing direct access to the downloadable distribution of a dataset. |   This must be the direct download URL. Use **landingPage** for landing or disambiguation pages, or **references** for documentation pages.
-API Endpoint |  webService |  If applicable | (1,)  | Endpoint of web service to access dataset.  |   This field will serve to delineate the web services offered by an agency and will be used to aggregate cross-government API catalogs.
-Format | format | If applicable  | (0,1)  |  The file format or API type of the distribution. |   This must describe the exact file available at accessURL using file extensions (e.g., CSV, XLS, XSLX, TSV, JSON, XML). For example, if the download file is a ZIP containing a CSV, the entry here is “ZIP”.
-License   | license  |  If applicable | (0,1)  | The license dataset or API is published with.  |   
-Language    | language  | No  | (0,n)  | The language of the dataset.  | string
-Documentation | references  | No  | (0,n)  | Related documents such as technical information about a dataset, developer documentation, etc.  |   Comma-separated URLs
-Size    | size  | No  | (0,1)  | The size of the downloadable dataset.  |   Sizes should be formatted as (e.g.), 52kb, 140mb, 2gb.
-Homepage URL    |  landingPage |  No |(0,1) |  Alternative landing page used to redirect user to a contextual, Agency-hosted “homepage” for the Dataset or API when selecting this resource from the Data.gov user interface. |  URL; This field is not intended for an agency’s homepage (e.g. www.agency.gov), but rather if a dataset has a human-friendly hub or landing page that users should be directed to for all resources tied to the dataset. This allows agencies to better specify what a visitor receives after selecting one of the agency’s datasets on Data.gov or in third-party mashups.
-RSS Feed | feed | No | (0,1) | URL for an RSS feed that provides access to the dataset. | URL; These RSS feeds will be used to create a cross-agency RSS feed search tool.
-System of Records    | systemOfRecords  | No  | (0,1)  | URL to the System of Records related to this dataset.  |  URL
+4 *Supplemental information*|||||||||
+4.1 Documentation | references  | No  | (0,n)  | Related documents such as technical information about a dataset, developer documentation, etc.  |   Comma-separated URLs
+5 *Distribution information*|||||||||
+5.1 License   | license  |  If applicable | (0,1)  | The license dataset or API is published with.  |   
+5.2 Copyright|-|-|-|-|-|-|-|-|-|
+5.3 Size    | size  | No  | (0,1)  | The size of the downloadable dataset.  |   Sizes should be formatted as (e.g.), 52kb, 140mb, 2gb.
+5.4 Download URL | accessURL  | If applicable  |  (1,1) |  URL providing direct access to the downloadable distribution of a dataset. |   This must be the direct download URL. Use **landingPage** for landing or disambiguation pages, or **references** for documentation pages.
+5.5 Homepage URL    |  landingPage |  No |(0,1) |  Alternative landing page used to redirect user to a contextual, Agency-hosted “homepage” for the Dataset or API when selecting this resource from the Data.gov user interface. |  URL; This field is not intended for an agency’s homepage (e.g. www.agency.gov), but rather if a dataset has a human-friendly hub or landing page that users should be directed to for all resources tied to the dataset. This allows agencies to better specify what a visitor receives after selecting one of the agency’s datasets on Data.gov or in third-party mashups.
+5.6 Format | format | If applicable  | (0,1)  |  The file format or API type of the distribution. |   This must describe the exact file available at accessURL using file extensions (e.g., CSV, XLS, XSLX, TSV, JSON, XML). For example, if the download file is a ZIP containing a CSV, the entry here is “ZIP”.
+5.7 Language    | language  | No  | (0,n)  | The language of the dataset.  | string
+5.8 Public Access Level  | accessLevel  | Yes  | (1,1) |  The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: Public (is or could be made publicly available), Restricted (available under certain conditions), or Private (never able to be made publicly available)  |   Must be one of the following: Public, Restricted, Private
+5.9 API Endpoint |  webService |  If applicable | (1,)  | Endpoint of web service to access dataset.  |   This field will serve to delineate the web services offered by an agency and will be used to aggregate cross-government API catalogs.
+5.10 RSS Feed | feed | No | (0,1) | URL for an RSS feed that provides access to the dataset. | URL; These RSS feeds will be used to create a cross-agency RSS feed search tool.
+5.11 Data Dictionary | dataDictionary  | If applicable  |(1,1) | URL to the data dictionary for the dataset or API. Note that documentation other than a Data Dictionary can be referenced using Related Documents as shown in the expanded fields.   |   URL
+5.12 System of Records    | systemOfRecords  | No  | (0,1)  | URL to the System of Records related to this dataset.  |  URL
 
 
 **Mappings to Other Vocabs**
