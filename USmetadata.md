@@ -68,8 +68,8 @@ US-specific System of Records    | systemOfRecords  | No  | (0,1)  | URL to the 
 
 **Mappings to Other Vocabs**
 
-Concept | Human-Readable Label | Metadata | CKAN | RDFa Lite 1.1 | Schema.org
-------- | ----- | -------- | -------- | -------- | ----- | -------
+Concept|CKAN - Level 1|CKAN - Level 2|CKAN - Level 3|Schema.org|DCAT|ADMS|VoID|Other (e.g. Dublin Core, Foaf, RDF, RDFa Lite)|RDFa Lite 1.1
+------- | ----- | -------- | -------- | -------- | ----- | -------|------|-----|----|---|---
 Title | Title | title | title |  dcterms:title | sdo:name
 Description | Description | description | notes | dcterms:description | sdo:description 
 Keyword | Tags | keyword |  tags |  dcat:keyword |  sdo:keywords 
