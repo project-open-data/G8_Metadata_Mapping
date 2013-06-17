@@ -9,9 +9,9 @@ The U.S. is currently implementing a new Open Data Policy, as outlined in the [M
 Concept|Description|Front-end (human-readable)|National metadata schema|Back-end machine-readable|Required|Data Type|Format: pattern|Cardinality|Usage Notes
 ------- | -------- | ----- | ---- | ---------- | ---------|-------|-------|-------|------
 1 *Contact information*|||||||||
-1.1 Person  | person | Yes | (1,1) | Contact person’s name for the asset.  |   Name should be formatted as Last, First
-1.2 Contact Email  | mbox  | Yes | (1,1)  | Contact person’s email address.  |   Email address
-1.3 Organisation (Owner) | publisher  | Yes |  (1,1) |  The publishing agency. |   Departments and multi-unit agencies may use this field to describe which subordinate agency published this dataset.
+1.1 Person|Name of the Contact person for the asset|Contact Name|person|maintainer|Yes|See Usage Notes|See Usage Notes|(1,1)|Name should be formatted as Last, First
+1.2 Contact Email|Contact person's email address|Contact email|mbox|maintainer_email|Yes|Email address||(1,1)|||
+1.3 Organisation (Owner)|The publishing agency.|Publisher|publisher|owner_org|Yes|See Usage Notes|See Usage Notes|(1,1)|Departments and multi-unit agencies may use this field to describe which subordiante agency published this dataset.
 1.4 Publisher|-|-|-|-|-|-|-|-|-|
 1.5 Author|-|-|-|-|-|-|-|-|-|
 1.6 Author Email|-|-|-|-|-|-|-|-|-|
@@ -19,7 +19,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 1.8 Maintainer Email|-|-|-|-|-|-|-|-|-|
 2 *Dataset information*|||||||||
 2.1 Unique Identifier|identifier|-|-|-|-|-|-|-|-|
-2.2 Release Date    | issued  | No  | (0,1)  | Date of formal issuance.  |    Date (YYYY-MM-DD)
+2.2 Release Date(D)|Date of formal issuance.|Release Date|issued|-|No|Date|Date (YYYY-MM-DD)|(0,1)|
 2.3 Modified|-|-|-|-|-|-|-|-|-|
 2.4 Last Updated  | modified  | Yes  | (1,1)  | Most recent date on which the dataset was changed, updated or modified.  |  Dates should be formatted as YYYY-MM-DD. Specify “01” as the day if unknown. 
 2.5 Description | description | Yes | (1,1) | Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest. | string
