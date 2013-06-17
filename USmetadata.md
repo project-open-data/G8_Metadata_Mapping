@@ -8,16 +8,25 @@ The U.S. is currently implementing a new Open Data Policy, as outlined in the [M
 
 Concept|Description|Front-end (human-readable)|National metadata schema|Back-end machine-readable|Required|Data Type|Format: pattern|Cardinality|Usage Notes
 ------- | -------- | ----- | ---- | ---------- | ---------|-------|-------|-------|------
+1 *Contact information*|||||||||
 1.1 Person  | person | Yes | (1,1) | Contact person’s name for the asset.  |   Name should be formatted as Last, First
 1.2 Contact Email  | mbox  | Yes | (1,1)  | Contact person’s email address.  |   Email address
 1.3 Organisation (Owner) | publisher  | Yes |  (1,1) |  The publishing agency. |   Departments and multi-unit agencies may use this field to describe which subordinate agency published this dataset.
 1.4 -|-|-|-|-|-|-|-|-|-|
-Title | title | Yes | (1,1) | Human-readable name of the asset. Should be in plain English and include sufficient detail to facilitate search and discovery. | string 
-Description | description | Yes | (1,1) | Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest. | string
-Keyword | keyword  | Yes  | (1,n)  | Tags (or keywords) help users discover your dataset, please include terms that would be used by technical and non-technical users. |   Separate keywords with commas.
-Last Updated  | modified  | Yes  | (1,1)  | Most recent date on which the dataset was changed, updated or modified.  |  Dates should be formatted as YYYY-MM-DD. Specify “01” as the day if unknown. 
+1.5 -|-|-|-|-|-|-|-|-|-|
+1.6 -|-|-|-|-|-|-|-|-|-|
+1.7 -|-|-|-|-|-|-|-|-|-|
+1.8 -|-|-|-|-|-|-|-|-|-|
+2 *Dataset information*|||||||||
+2.1 Unique Identifier|identifier|-|-|-|-|-|-|-|-|
+2.2 Release Date    | issued  | No  | (0,1)  | Date of formal issuance.  |    Date (YYYY-MM-DD)
+2.3 Modified|-|-|-|-|-|-|-|-|-|
+2.4 Last Updated  | modified  | Yes  | (1,1)  | Most recent date on which the dataset was changed, updated or modified.  |  Dates should be formatted as YYYY-MM-DD. Specify “01” as the day if unknown. 
+2.5 Description | description | Yes | (1,1) | Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest. | string
+2.6 Keyword | keyword  | Yes  | (1,n)  | Tags (or keywords) help users discover your dataset, please include terms that would be used by technical and non-technical users. |   Separate keywords with commas.
+2.7 Frequency of Update  | accrualPeriodicity  |  No | (0,1)  |  Frequency with which dataset is published. |   Must be one of the following: hourly, daily, weekly, yearly, other
+2.8 Title | title | Yes | (1,1) | Human-readable name of the asset. Should be in plain English and include sufficient detail to facilitate search and discovery. | string 
 GAP -|-|-|-|-|-|-|-|-|-|
-Unique Identifier  | identifier  |  Yes | (1,1)  | A unique identifier for the dataset or API as maintained within an Agency catalog or database.  | This field allows third parties to maintain a consistent record for datasets even if title or URLs are updated. Agencies may integrate an existing system for maintaining unique identifiers or enter arbitrary characters for this field. However, each identifier must be unique across the agency’s catalog and remain fixed. Characters should be alphanumeric.
 Public Access Level  | accessLevel  | Yes  | (1,1) |  The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: Public (is or could be made publicly available), Restricted (available under certain conditions), or Private (never able to be made publicly available)  |   Must be one of the following: Public, Restricted, Private
 Data Dictionary | dataDictionary  | If applicable  |(1,1) | URL to the data dictionary for the dataset or API. Note that documentation other than a Data Dictionary can be referenced using Related Documents as shown in the expanded fields.   |   URL
 Download URL | accessURL  | If applicable  |  (1,1) |  URL providing direct access to the downloadable distribution of a dataset. |   This must be the direct download URL. Use **landingPage** for landing or disambiguation pages, or **references** for documentation pages.
@@ -26,8 +35,6 @@ Format | format | If applicable  | (0,1)  |  The file format or API type of the 
 License   | license  |  If applicable | (0,1)  | The license dataset or API is published with.  |   
 Spatial Coverage | spatial  | If applicable  | (0,1)  | The range of spatial applicability of a dataset. Could include a spatial region like a bounding box or a named place.  |   This field should contain one of the following types of content: (1) a bounding coordinate box for the dataset represented in latitude / longitude pairs where the coordinates are specified in decimal degrees and in the order of: minimum longitude, minimum latitude, maximum longitude, maximum latitude; (2) a latitude / longitude pair (in decimal degrees) representing a point where the dataset is relevant; (3) a geographic feature expressed in Geography Markup Language using the Simple Features Profile; or (4) a geographic feature from the GeoNames database.
 Temporal Coverage | temporal   | If applicable  | (0,1)  |  The range of temporal applicability of a dataset (i.e., a start and end date of applicability for the data). |   This field should contain an interval of time defined by start and end dates. Dates should be formatted as pairs of {start date, end date} in the format YYYY-MM-DD hh:mm:ss using 24 hour clock time notation (e.g., 2011-02-14 12:00:00, 2013-02-14 12:00:00).
-Release Date    | issued  | No  | (0,1)  | Date of formal issuance.  |    Date (YYYY-MM-DD)
-Frequency of Update  | accrualPeriodicity  |  No | (0,1)  |  Frequency with which dataset is published. |   Must be one of the following: hourly, daily, weekly, yearly, other
 Language    | language  | No  | (0,n)  | The language of the dataset.  | string
 Granularity    | granularity  | No  | (0,1)   | Level of granularity of the dataset.  |    Typically geographical or temporal.
 Data Quality    | dataQuality | No  | (0,1)  |  Whether the dataset meets the agency’s Information Quality Guidelines. | Boolean (true/false)    
