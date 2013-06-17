@@ -18,18 +18,18 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 1.7 Maintainer|-|-|-|-|-|-|-|-|-|
 1.8 Maintainer Email|-|-|-|-|-|-|-|-|-|
 2 *Dataset information*|||||||||
-2.1 Unique Identifier|identifier|-|-|-|-|-|-|-|-|
+2.1 Unique Identifier|A unique identifier for the dataset or API as maintained within an Agency catalog or database.|Unique Identifier|identifier|id|Yes|See Usage Notes|Characters should be alphanumeric|(1,1)|This field allows third parties to maintain a consistent record for datasets even if title or URLs are updated. Agencies may integrate an existing system for maintaining unique identifiers or enter arbitrary characters for this field. However, each identifier must be unique across the agency’s catalog and remain fixed.|
 2.2 Release Date(D)|Date of formal issuance.|Release Date|issued|-|No|Date|Date (YYYY-MM-DD)|(0,1)|
 2.3 Modified|-|-|-|-|-|-|-|-|-|
-2.4 Last Updated  | modified  | Yes  | (1,1)  | Most recent date on which the dataset was changed, updated or modified.  |  Dates should be formatted as YYYY-MM-DD. Specify “01” as the day if unknown. 
-2.5 Description | description | Yes | (1,1) | Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest. | string
-2.6 Keyword | keyword  | Yes  | (1,n)  | Tags (or keywords) help users discover your dataset, please include terms that would be used by technical and non-technical users. |   Separate keywords with commas.
-2.7 Frequency of Update  | accrualPeriodicity  |  No | (0,1)  |  Frequency with which dataset is published. |   Must be one of the following: hourly, daily, weekly, yearly, other
+2.4 Last Updated|Most recent date on which the dataset was changed, updated or modified.|Last Update|modified|revision_timestamp|Yes|Date|YYYY-MM-DD|(1,1)|Specify "01" as the day if unknown 
+2.5 Description|Human-readable description (e.g. an abstract) but sufficient detail to enable a user to quickly understand whether the asset is of interest.|Description|description|notes|Yes|String|^[a-z0-9_-]{2,}$|(1,1)|
+2.6 Keyword|Tags (or keywords) help users discover your dataset, please include terms that would be used by technical and non-technical users.|Tags|keyword|tags|Yes|Separate keywords with commas.|Separate keywords with commas.|(1,n)||Separate keywords with commas
+2.7 Frequency of Update|Frequency with which dataset is published|Frequency|accrualPeriodicity|-|No|See Usage Notes|See Usage Notes|(0,1)|Must be one of the following: hourly, daily, weekly, yearly,   Frequency with which dataset is published. |   Must be one of the following: hourly, daily, weekly, yearly, other
 2.8 Title | title | Yes | (1,1) | Human-readable name of the asset. Should be in plain English and include sufficient detail to facilitate search and discovery. | string 
 2.9 Category    | theme  |  No |  (0,n) |  Main thematic category of the dataset. |   Comma-separated values
 GAP -|-|-|-|-|-|-|-|-|-|
 3 *Extent information*|||||||||
-3.1 Spatial Coverage | spatial  | If applicable  | (0,1)  | The range of spatial applicability of a dataset. Could include a spatial region like a bounding box or a named place.  |   This field should contain one of the following types of content: (1) a bounding coordinate box for the dataset represented in latitude / longitude pairs where the coordinates are specified in decimal degrees and in the order of: minimum longitude, minimum latitude, maximum longitude, maximum latitude; (2) a latitude / longitude pair (in decimal degrees) representing a point where the dataset is relevant; (3) a geographic feature expressed in Geography Markup Language using the Simple Features Profile; or (4) a geographic feature from the GeoNames database.
+3.1 Spatial Coverage|The range of spatial applicability of a dataset. Could include a spatial region like a bounding box or a named place.|Spatial|spatial|spatial|If applicable|See Usage Notes||(0,1)|This field should contain one of the following types of content: (1) a bounding coordinate box for the dataset represented in latitude / longitude pairs where the coordinates are specified in decimal degrees and in the order of: minimum longitude, minimum latitude, maximum longitude, maximum latitude; (2) a latitude / longitude pair (in decimal degrees) representing a point where the dataset is relevant; (3) a geographic feature expressed in Geography Markup Language using the Simple Features Profile; or (4) a geographic feature from the GeoNames database.
 3.2 Spatial Type|-|-|-|-|-|-|-|-|-|
 3.3 Spatial Coordinates|-|-|-|-|-|-|-|-|-|
 3.4 Geographic Region Name|-|-|-|-|-|-|-|-|-|
@@ -37,7 +37,7 @@ GAP -|-|-|-|-|-|-|-|-|-|
 3.6 Bounding Box - Upper Right Corner|-|-|-|-|-|-|-|-|-|
 3.7 Bounding Box - Coordinate Reference System|-|-|-|-|-|-|-|-|-|
 3.8 Geographic Bounding Box - Dimensions|-|-|-|-|-|-|-|-|-|
-3.9 Temporal Coverage | temporal   | If applicable  | (0,1)  |  The range of temporal applicability of a dataset (i.e., a start and end date of applicability for the data). |   This field should contain an interval of time defined by start and end dates. Dates should be formatted as pairs of {start date, end date} in the format YYYY-MM-DD hh:mm:ss using 24 hour clock time notation (e.g., 2011-02-14 12:00:00, 2013-02-14 12:00:00).
+3.9 Temporal Coverage|The range of temporal applicability of a dataset (i.e., a start and end date of applicability for the data).|temporal|temporal|-|If applicable|Time/Date|Dates should be formatted as pairs of {start date, end date} in the format YYYY-MM-DD hh:mm:ss using 24 hour clock time notation (e.g., 2011-02-14 12:00:00, 2013-02-14 12:00:00).|(0,1)|This field should contain an interval of time defined by start and end dates.
 3.10 Temporal coverage starts|-|-|-|-|-|-|-|-|-|
 3.11 Temporal coverage ends|-|-|-|-|-|-|-|-|-|
 3.12 Temporal granularity|-|-|-|-|-|-|-|-|-|
@@ -47,10 +47,10 @@ GAP -|-|-|-|-|-|-|-|-|-|
 3.16 Periodicity of the estimates|-|-|-|-|-|-|-|-|-|
 3.17 Temporal and spatial comparability|-|-|-|-|-|-|-|-|-|
 3.18 Periodicity of data dissemination|-|-|-|-|-|-|-|-|-|
-3.19 Data Quality    | dataQuality | No  | (0,1)  |  Whether the dataset meets the agency’s Information Quality Guidelines. | Boolean (true/false)    
+3.19 Data Quality|Whether the dataset meets the agency's Information Quality Guidelines.|Data Quality|dataQuality|-|No|Boolean|Boolean (true-false)|(0,1)
 3.20 Granularity    | granularity  | No  | (0,1)   | Level of granularity of the dataset.  |    Typically geographical or temporal.
 4 *Supplemental information*|||||||||
-4.1 Documentation | references  | No  | (0,n)  | Related documents such as technical information about a dataset, developer documentation, etc.  |   Comma-separated URLs
+4.1 Documentation URL|Related documents such as technical information about a dataset, developer documentation, etc.|Related Documents|references|resources|No|Comma-sepated URLs|Comma-sepated URLs|(0,n)|
 5 *Distribution information*|||||||||
 5.1 License   | license  |  If applicable | (0,1)  | The license dataset or API is published with.  |   
 5.2 Copyright|-|-|-|-|-|-|-|-|-|
