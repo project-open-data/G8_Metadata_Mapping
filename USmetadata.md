@@ -6,15 +6,17 @@ The U.S. is currently implementing a new Open Data Policy, as outlined in the [M
 
 **Metadata Details**
 
-Concept | Metadata | Required? | Cardinality | Description | Usage Notes
-------- | -------- | ----- | ---- | ---------- | ---------
+Concept|Description|Front-end (human-readable)|National metadata schema|Back-end machine-readable|Required|Data Type|Format: pattern|Cardinality|Usage Notes
+------- | -------- | ----- | ---- | ---------- | ---------|-------|-------|-------|------
+1.1 Person  | person | Yes | (1,1) | Contact person’s name for the asset.  |   Name should be formatted as Last, First
+1.2 Contact Email  | mbox  | Yes | (1,1)  | Contact person’s email address.  |   Email address
+1.3 Organisation (Owner) | publisher  | Yes |  (1,1) |  The publishing agency. |   Departments and multi-unit agencies may use this field to describe which subordinate agency published this dataset.
+1.4 -|-|-|-|-|-|-|-|-|-|
 Title | title | Yes | (1,1) | Human-readable name of the asset. Should be in plain English and include sufficient detail to facilitate search and discovery. | string 
 Description | description | Yes | (1,1) | Human-readable description (e.g., an abstract) with sufficient detail to enable a user to quickly understand whether the asset is of interest. | string
 Keyword | keyword  | Yes  | (1,n)  | Tags (or keywords) help users discover your dataset, please include terms that would be used by technical and non-technical users. |   Separate keywords with commas.
 Last Updated  | modified  | Yes  | (1,1)  | Most recent date on which the dataset was changed, updated or modified.  |  Dates should be formatted as YYYY-MM-DD. Specify “01” as the day if unknown. 
-Organisation (Owner) | publisher  | Yes |  (1,1) |  The publishing agency. |   Departments and multi-unit agencies may use this field to describe which subordinate agency published this dataset.
-Contact Person  | person | Yes | (1,1) | Contact person’s name for the asset.  |   Name should be formatted as Last, First
-Contact Email  | mbox  | Yes | (1,1)  | Contact person’s email address.  |   Email address
+GAP -|-|-|-|-|-|-|-|-|-|
 Unique Identifier  | identifier  |  Yes | (1,1)  | A unique identifier for the dataset or API as maintained within an Agency catalog or database.  | This field allows third parties to maintain a consistent record for datasets even if title or URLs are updated. Agencies may integrate an existing system for maintaining unique identifiers or enter arbitrary characters for this field. However, each identifier must be unique across the agency’s catalog and remain fixed. Characters should be alphanumeric.
 Public Access Level  | accessLevel  | Yes  | (1,1) |  The degree to which this dataset could be made publicly-available, regardless of whether it has been made available. Choices: Public (is or could be made publicly available), Restricted (available under certain conditions), or Private (never able to be made publicly available)  |   Must be one of the following: Public, Restricted, Private
 Data Dictionary | dataDictionary  | If applicable  |(1,1) | URL to the data dictionary for the dataset or API. Note that documentation other than a Data Dictionary can be referenced using Related Documents as shown in the expanded fields.   |   URL
