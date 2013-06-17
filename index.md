@@ -101,4 +101,5 @@ The general metadata concepts are listed in the left-hand column (A.)
 5.11 Data Dictionary|data- Dictionary|
 5.12 System of Records|systemOf- Records|
 
-
+**Feedback**
+Please give feedback on this mapping - you can fill out a [short survey (5 questions)](http://www.surveymonkey.com/s/CCM3F2C) or a longer one (10 questions).
