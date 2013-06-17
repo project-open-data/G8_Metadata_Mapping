@@ -72,13 +72,11 @@ The general metadata concepts are listed in the left-hand column (A.)
 2.1.H Unique Identifier	|	Unique Identifier	|	URI	|	URL	|	File Identifier	|	Identifier	|	Name	|	URLの一部	|	ID univoco dataset	|	Идентификационный код 	|
 2.1.M Unique Identifier	|	id	|	name	|	PSI	|	id	|	identifier	|	name	|	name	|	nid	|	-	|
 2.2.H Release Date	|	Release Date	|	Added to data.gov.uk	|	Publié le 	|	Date Published	|	Created	|	Veröffentlichungsdatum	|	-	|	Data caricamento	|	Дата первой публикации набора данных	|
-2.2.M Release Date	|	-	|	metadata_created	|	Date de publication	|	date_published	|	release_date	|	" (extras->dates->role = ""veroeffentlicht""):
-extras->dates->date"	|	-	|	field_data_load	|	Date of first publication	|
+2.2.M Release Date	|	-	|	metadata_created	|	Date de publication	|	date_published	|	release_date	|	" (extras->dates->role = ""veroeffentlicht""):extras->dates->date"	|	-	|	field_data_load	|	Date of first publication	|
 2.2.H.R Release Date	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.2.M.R Release Date	|	-	|	-	|	-	|	-	|	created	|	-	|	-	|	-	|	-	|
 2.3.H Modified	|	-	|	Modified on data.gov.uk	|	Modifé le	|	Date Modified	|	Modified date	|	Stand Metadaten 	|	-	|	Data di aggiornamento	|	Дата последнего внесения изменений	|
-2.3.M Modified	|	-	|	metadata_modified	|	Date de changement de statut	|	modified	|	modified_date	|	"(extras->dates->role = ""aktualisiert"")
-extras->dates->date"	|	-	|	field_data_last_update	|	-	|
+2.3.M Modified	|	-	|	metadata_modified	|	Date de changement de statut	|	modified	|	modified_date	|	"(extras->dates->role = ""aktualisiert"")extras->dates->date"	|	-	|	field_data_last_update	|	-	|
 2.3.H.R Modified	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.3.M.R Modified	|	-	|	-	|	-	|	-	|	last_modified	|	-	|	-	|	-	|	-	|
 2.4.H Last Updated	|	Last Update	|	-	|	-	|	(=Date Modified)	|	Last modified	|	[= Modified (date that this dataset was changed)]	|	-	|	-	|	-	|
@@ -93,10 +91,8 @@ extras->dates->date"	|	-	|	field_data_last_update	|	-	|
 2.7.M Frequency of Update	|	-	|	 frequency-of-update (UKLP only)	|	Fréquence de mise à jour	|	maintenance_and_update_frequency	|	type_of_dataset	|	-	|	-	|	-	|	-	|
 2.8.H Title	|	Title	|	Title	|	Titre	|	Title	|	Title	|	Titel	|	タイトル	|	Titolo	|	Наименование набора данных	|
 2.8.M Title	|	title	|	title	|	Nom	|	title	|	title	|	title	|	title	|	title	|	Data title	|
-2.9.H Category	|	Category	|	National Statistics	|	Mots clés	|	"Subject 
-Topic Category"	|		|		|		|	Area tematica	|		|
-2.9.M Category	|	groups	|		|		|	"subject
-topic_category"	|		|		|		|	field_areatematica	|		|
+2.9.H Category	|	Category	|	National Statistics	|	Mots clés	|	"Subject Topic Category"	|	-	|	-	|	-	|	Area tematica	|	-	|
+2.9.M Category	|	groups	|	-	|	-	|	"subject topic_category"	|	-	|	-	|	-	|	field_areatematica	|	-	|
 3. Extent	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.1.H Spatial coverage	|	Spatial	|	Dataset Extent	|	Couverture géographique	|	Spatial	|	Geographical coverage	|	Geographische Abdeckung	|	-	|	-	|	-	|
 3.1.M Spatial coverage	|	spatial	|	-	|	Couverture géographique	|	spatial	|	geographical_coverage	|	(see below)	|	-	|	-	|	-	|
@@ -106,11 +102,9 @@ topic_category"	|		|		|		|	field_areatematica	|		|
 3.3.M Spatial Coordinates	|	-	|	spatial	|	-	|	spatial	|	-	|	extras->spatial->coordinates	|	-	|	-	|	Spatial coordinates	|
 3.4.H Geographic Region Name	|	-	|	-	|	-	|	Geographic Region	|	-	|	Abgedecktes Gebiet	|	-	|	Regione	|	Название региона	|
 3.4.M Geographic Region Name	|	-	|	-	|	-	|	geographic_region	|	-	|	extras->spatial_text	|	-	|	field_regione	|	Geographic Region Name	|
-3.5.H Geographic Bounding Box - Lower Left Corner  	|	-	|	Latitude / Longitude	|	-	|	(=Spatial)	|	-	|	-	|	-	|	-	|	"Широта крайней южной точки
-Долгота крайней западной точки"	|
+3.5.H Geographic Bounding Box - Lower Left Corner  	|	-	|	Latitude / Longitude	|	-	|	(=Spatial)	|	-	|	-	|	-	|	-	|	"Широта крайней южной точки Долгота крайней западной точки"	|
 3.5.M Geographic Bounding Box - Lower Left Corner  	|	-	|	bbox-west-long, bbox-south-lat	|	-	|	spatial	|	-	|	-	|	-	|	-	|	-	|
-3.6.H Bounding Box - Upper Right Corner  	|	-	|	Latitude / Longitude	|	-	|	(=Spatial)	|	-	|	-	|	-	|	-	|	"Широта крайней северной точки
-Долгота крайней восточной точки"	|
+3.6.H Bounding Box - Upper Right Corner  	|	-	|	Latitude / Longitude	|	-	|	(=Spatial)	|	-	|	-	|	-	|	-	|	"Широта крайней северной точки Долгота крайней восточной точки"	|
 3.6.M Bounding Box - Upper Right Corner  	|	-	|	bbox-east-long, bbox-north-lat	|	-	|	spatial	|	-	|	-	|	-	|	-	|	-	|
 3.7.H Bounding Box - Coordinate Reference System  	|	-	|	Spatial reference system	|	-	|	(=Spatial)	|	-	|	-	|	-	|	-	|	Система координат	|
 3.7.M Bounding Box - Coordinate Reference System  	|	-	|	spatial-reference-system	|	-	|	spatial	|	-	|	-	|	-	|	-	|	-	|
@@ -152,12 +146,14 @@ topic_category"	|		|		|		|	field_areatematica	|		|
 5.3.M Size	|	-	|	-	|	taille	|	size	|	-	|	-	|	-	|	-	|	Size	|
 5.4.M URL - resource	|	-	|	URL	|	Cible du bouton de téléchargement	|	URL	|	URL	|	Link	|	ホームページ	|	URL pagina dataset	|	Ссылка (URL) на набор	|
 5.4.H URL - resource	|	-	|	Resource.url	|	"chargement de fichier"+"URL d'accès"	|	url	|	url	|	resources->url	|	url	|	field_url_dataset	|	Data URL	|
-5.5.H Homepage URL	|	Homepage URL	|	Home	|	Accueil 	|	Homepage URL	|	URL/HOME	|		|	ホームページ【再掲】	|	Home page ente	|		|
-5.5.M Homepage URL	|	url	|		|		|	url	|		|		|	url	|	field_site_url_ente	|		|
+5.5.H Homepage URL	|	Homepage URL	|	Home	|	Accueil 	|	Homepage URL	|	URL/HOME	|	-	|	ホームページ【再掲】	|	Home page ente	|	-	|
+5.5.M Homepage URL	|	url	|	-	|	-	|	url	|	-	|	-	|	url	|	field_site_url_ente	|	-	|
 5.6.H Format - resource	|	Format	|	Format	|	Format	|	Format	|	Format	|	Format	|	-	|	Formato dati	|	Формат	|
 5.6.M Format - resource	|	res_format	|	Resource.format	|	format	|	format	|	format	|	resources->format	|	-	|	field_formato	|	Format 	|
 5.7.H Language	|	Language	|	-	|	Langue	|	Language	|	language	|	Sprache	|	-	|	-	|	Язык, используемый для документирования метаданных	|
 5.7.M Language	|	-	|	-	|	Langue du jeu de données	|	language	|	language	|	resources->language	|	-	|	-	|	Language	|
+-	|	-	|	Langue du jeu de données	|	language	|	language	|	resources->language	|	-	|	-	|	Language	|	-	|
+
 
 
 **Feedback**
