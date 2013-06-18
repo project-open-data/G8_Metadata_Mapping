@@ -72,9 +72,3 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 
 
 
-
-**Mappings to Other Vocabs**
-
-Concept | Human-Readable Label | Metadata | CKAN | RDFa Lite 1.1 | Schema.org
-------- | ----- | -------- | -------- | -------- | ----- | -------
-
