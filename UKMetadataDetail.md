@@ -70,5 +70,11 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 5.7 Language	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 
 
+**Mapping**
+Please find the metadata mapping index between G8 nations [here](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/index.md).
+
+**Feedback**
+Please give feedback on this mapping - you can fill out a [short survey (5 questions)](http://www.surveymonkey.com/s/CCM3F2C) or a [longer survey (10 questions)](http://www.surveymonkey.com/s/N2ZMP7K).
+
 
 
