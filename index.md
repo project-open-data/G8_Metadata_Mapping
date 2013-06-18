@@ -157,4 +157,4 @@ The general metadata concepts are listed in the left-hand column (A.)
 
 
 **Feedback**
-Please give feedback on this mapping - you can fill out a [short survey (5 questions)](http://www.surveymonkey.com/s/CCM3F2C) or a longer one (10 questions).
+Please give feedback on this mapping - you can fill out a [short survey (5 questions)](http://www.surveymonkey.com/s/CCM3F2C) or a [longer survey (10 questions)](http://www.surveymonkey.com/s/N2ZMP7K).
