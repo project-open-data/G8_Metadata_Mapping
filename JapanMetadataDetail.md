@@ -47,7 +47,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 3.17 Temporal and spatial comparability	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.18 Periodicity of data dissemination	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.19 Data quality	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-3.20.X Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.20 Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4. *Supplemental Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4.1 Documentation URL - resource	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5. *Distribution Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
