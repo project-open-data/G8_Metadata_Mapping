@@ -69,9 +69,9 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 5.6 Format - resource		|	The name of the data transfer format.	|	Format	|	name	|	format	|	YES	|	Text, based on encoding scheme	|	See Usage Notes	|	(1,1)	|	Controlled list.	|
 5.7 Language	|	The language of the resource	|	Language	|	language	|	language	|	Yes	|	Text, based on encoding scheme	|	See Usage Notes	|	(1,1)	|	Controlled vocabulary : Codes for the Representation of Names of Language, Part 2: Alpha-3 Code / Terminology Codes (ISO 639-2/T) and ISO 3166-1 country codes	|
 
+**Mapping**
+Please find the metadata mapping index between G8 nations [here](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/index.md).
 
-**Mappings to Other Vocabs**
-
-Concept | Human-Readable Label | Metadata | CKAN | RDFa Lite 1.1 | Schema.org
-------- | ----- | -------- | -------- | -------- | ----- | -------
+**Feedback**
+Please give feedback on this mapping - you can fill out a [short survey (5 questions)](http://www.surveymonkey.com/s/CCM3F2C) or a [longer survey (10 questions)](http://www.surveymonkey.com/s/N2ZMP7K).
 
