@@ -75,10 +75,10 @@ As "resources" is a list of objects, more than one resource (each including one 
 
 
 
+**Mapping**
+Please find the metadata mapping index between G8 nations [here](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/index.md).
 
+**Feedback**
+Please give feedback on this mapping - you can fill out a [short survey (5 questions)](http://www.surveymonkey.com/s/CCM3F2C) or a [longer survey (10 questions)](http://www.surveymonkey.com/s/N2ZMP7K).
 
-**Mappings to Other Vocabs**
-
-Concept | Human-Readable Label | Metadata | CKAN | RDFa Lite 1.1 | Schema.org
-------- | ----- | -------- | -------- | -------- | ----- | -------
 
