@@ -14,7 +14,7 @@ Next planned change: Integration with CKAN2 for data harvesting (30 September 20
 
 Concept|Description|Front-end (human-readable)|National metadata schema|Back-end machine-readable|Required|Data Type|Format: pattern|Cardinality|Usage Notes
 ------- | -------- | ----- | ---- | ---------- | ---------|-------|-------|-------|------
-1. Contact information  |	-	|	-	|	-	|	-	|	Yes	|	String	|	^[a-z0-9_-]{2,}$	|	(1,1)	|
+1. *Contact information*  |	-	|	-	|	-	|	-	|	Yes	|	String	|	^[a-z0-9_-]{2,}$	|	(1,1)	|
 1.1 Person	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 1.2 Contact Email - Publisher	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 1.2 Contact Email - Dataset	|	-	|	Mail del Funzionario/Unità organizzativa	|	-	|	field_email_rif	|	no	|	-	|	-	|	-	|
@@ -24,7 +24,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 1.6 Author Email	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 1.7 Maintainer	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 1.8 Maintainer Email	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-2. Dataset Identification	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2. *Dataset Identification*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.1 Unique Identifier	|	-	|	ID univoco dataset	|	-	|	nid	|	yes	|	-	|	-	|	-	|
 2.2 Release Date	|	-	|	Data caricamento	|	-	|	field_data_load	|	no	|	-	|	-	|	-	|
 2.2.R Release Date	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
@@ -37,7 +37,8 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 2.7 Frequency of Update	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.8 Title	|	-	|	Titolo	|	-	|	title	|	yes	|	-	|	-	|	-	|
 2.9 Category	|	-	|	Area tematica	|	-	|	field_areatematica	|	no	|	-	|	-	|	-	|
-3.1 Spatial coverage	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2. *Extent*  |	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3. 3.1 Spatial coverage	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.2 Spatial Type	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.3 Spatial Coordinates	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.4 Geographic Region Name	|	-	|	Regione	|	-	|	field_regione	|	no	|	-	|	-	|	-	|
@@ -57,9 +58,9 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 3.18 Periodicity of data dissemination	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.19 Data quality	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.20.X Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-4. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+4.*Supplemental Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4.1 Documentation URL - resource	|	-	|	Note	|	-	|	field_note	|	no	|	-	|	-	|	-	|
-5. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+5. *Distribution Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5.1 Licence	|	-	|	Licenza	|	-	|	field_licenza	|	no	|	-	|	-	|	-	|
 5.2 Copyright	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5.3 Size	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
