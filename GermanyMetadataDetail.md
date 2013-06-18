@@ -1,14 +1,17 @@
-####France Metadata
+####Germany Metadata
 
 **Where to Find Data**
 
-Where to find: Data of the EU institutions are hosted with the different institutions and departments. The open data portal of the EU institutions references metadata to datasets selected for this portal.
+Where to find: In Germany, the prototype of [GovData](http://www.govdata.de) was started as a cross-level portal. Until now, some, but not all data is available from GovData. We are working  constantly on increasing the number of datasets.
+Additionally, some federal states and some municipalities have their own data portals;  other data is available from special data catalogs, e.g. for geospatial, environmental or statistical data.
 
-Licensing: [Click here](http://ec.europa.eu/geninfo/legal_notices_en.htm)
+Licensing: Most, but not all data is openly licensed. It is the responsibility of every data publisher to specify the license. GovData recommends using the (open) "Datenlizenz Deutschland" ("Data License Germany", https://github.com/fraunhoferfokus/ogd-metadata/blob/master/lizenzen/BMI/data_licence_Germany_attribution_V1.md). More Info (German only): https://www.govdata.de/lizenzen
 
-Contact: op-odp-contact@publications.europa.eu
+Contact: Federal Ministry of the Interior, Division O1, o1@bmi.bund.de, info@govdata.de
 
-Latest metadata: http://open-data.europa.eu/files/MetadataVocabulary.ods
+Latest metadata: https://github.com/fraunhoferfokus/ogd-metadata
+
+Portal API: https://www.govdata.de/ckan/api
 
 **Metadata Details**
 
@@ -24,7 +27,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 1.6 Author Email	|	Email address or contact form of the author.	|	Veröffentlichende Stelle: E-Mail	|	-	|	author_email	|	no	|	String	|	URI	|	(0,1)	|	Instead of an email address, it is possible to include the URL of a web-based contact form.	|
 1.7 Maintainer	|	This contact (normally an authority or role, not an individual) should be contacted for questions and comments on the data.	|	Datenverantwortliche Stelle	|	-	|	maintainer	|	no	|	String	|	-	|	(0,1)	|	-	|
 1.8 Maintainer Email	|	Email address or contact form of responsible authority.	|	Datenverantwortliche Stelle: E-Mail	|	-	|	maintainer_email	|	no	|	String	|	URI	|	(0,1)	|	Instead of an email address, it is possible to include the URL of a web-based contact form.	|
-2. Dataset Identification	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2. *Dataset Identification*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.1 Unique Identifier	|	A human readable identifier that can be used for identification (ASCII-version of "title", used for "pretty links" and linked data URIs)	|	Name	|	-	|	name	|	yes	|	String	|	^[a-z0-9_-]{2,}$	|	(1,1)	|	-	|
 2.2 Release Date	|	Publication data of the dataset.	|	Veröffentlichungsdatum	|	-	|	 (extras->dates->role = "veroeffentlicht"): extras->dates->date	|	yes	|	String	|	date (DD.MM.YYYY)	|	(1,1)	|	"extras->dates" is a list, containing the dates of creation, publicaton and last modification of the dataset. To include the release date, "extras->dates->role" has to be set to "veroeffentlicht".	|
 2.2.R Release Date	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
@@ -37,7 +40,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 2.7 Frequency of Update	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.8 Title	|	The title describes the dataset and is displayed for example in search results and lists.	|	Titel	|	-	|	title	|	yes	|	String	|	-	|	(1,1)	|	-	|
 2.9 Category	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-3. Extent	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3. *Extent*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.1 Spatial coverage	|	The geographical coverage of the data.	|	Geographische Abdeckung	|	-	|	(see below)	|	-	|	-	|	-	|	-	|	Currently not used by GovData. Will be used later for geographical search.	|
 3.2 Spatial Type	|	At the moment, just a polygon is provided, other types could be envisaged in future.	|	Art der Form	|	-	|	extras->spatial->type	|	no	|	String	|	Chose from "polygon"	|	(0,1)	|	Currently, "polygon" is the sole list element	|
 3.3 Spatial Coordinates	|	List of the coordinates	|	Koordinaten-Liste	|	-	|	extras->spatial->coordinates	|	no	|	List of arrays	|	-	|	(0,n)	|	WGS 84 coordinates according to GeoJSON (http://geojson.org)	|
@@ -57,10 +60,10 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 3.17 Temporal and spatial comparability	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.18 Periodicity of data dissemination	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.19 Data quality	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-3.20.X Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-4. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.20 Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+4. *Supplemental Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4.1 Documentation URL - resource	|	The original website the data is coming from.	|	Website	|	-	|	url	|	no	|	string	|	URI	|	(0,1)	|	-	|
-5. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+5. *Distribution Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5.1 Licence	|	-	|	Nutzungsbestimmungen	|	-	|	license_id	|	yes	|	string	|	Choose from apache, app_commercial, app_freeware, app_opensource, bsd-license, cc-by, cc-by-sa, cc-nc, cc-by-nd, cc-zero, dl-de-by-1.0, dl-de-by-nc-1.0, geolizenz-closed, geolizenz-i-a, gfdl, gpl-3.0, mozilla, odc-by, odc-odbl, odc-pddl, official-work, other-closed, other-open	|	(1,1)	|	-	|
 5.2 Copyright	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5.3 Size	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
