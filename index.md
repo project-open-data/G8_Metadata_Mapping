@@ -45,9 +45,9 @@ The general metadata concepts are listed in the left-hand column (A.)
 
  (A.)|[US](http://www.data.gov)|[UK](http://www.data.gov.uk)|[France](http://www.data.gouv.fr)|[Canada](http://www.data.gc.ca)|[EU](http://www.open-data.europa.eu/open-data)|[Germany](http://www.govdata.de)|[Japan](http:www.datameti.go.jp/data)|[Italy](http://www.dati.gov.it)|Russian Federation*
 -----|------|-----|-----|-----|-----|-----|------|-----|-----
- **(B.)**|[US detail](/USmetadata.md)|UK detail|France detail|Canada detail|EU detail|Germany detail|Japan detail|Italy detail|RF detail - *currently no single portal
+ **(B.)**|[US detail](/USmetadata.md)|[United Kingdom](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/UKMetadataDetail.md)|[France](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/FranceMetadataDetail.md) |[Canada](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/CanadaMetadataDetail.md)|[European Union](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/EUMetadataDetail.md)|[Germany](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/GermanyMetadataDetail.md)|[Japan](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/JapanMetadataDetail.md)|[Italy](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/ItalyMetadataDetail.md)|[Russian Federation](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/RussianFederationMetadataDetail.md) - *currently no single portal
 ||
- **Concepts** |
+**Concepts** |
 *1. Contact Information*| | |
 1. Contact information |	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 1.1.H Person	|	Contact Name	|	-	|	-	|	-	|	Contact Name	|	Ansprechpartner	|	-	|	-	|	Ответственное лицо	|
@@ -68,7 +68,7 @@ The general metadata concepts are listed in the left-hand column (A.)
 1.7.M Maintainer	|	-	|	-	|	Producteur de données	|	electronicMailAddress	|	-	|	maintainer	|	maintainer	|	-	|	Maintainer	|
 1.8.H Maintainer Email	|	-	|	-	|	-	|	(=Email)	|	-	|	Datenverantwortliche Stelle: E-Mail	|	メンテナーのメールアドレス	|	-	|	Электронная почта субъекта, ответственного за обновление данных	|
 1.8.M Maintainer Email	|	-	|	-	|	-	|	author_email	|	-	|	maintainer_email	|	maintainer_email	|	-	|	Maintainer Email	|
-2. Dataset Identification	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2. *Dataset Identification*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.1.H Unique Identifier	|	Unique Identifier	|	URI	|	URL	|	File Identifier	|	Identifier	|	Name	|	URLの一部	|	ID univoco dataset	|	Идентификационный код 	|
 2.1.M Unique Identifier	|	id	|	name	|	PSI	|	id	|	identifier	|	name	|	name	|	nid	|	-	|
 2.2.H Release Date	|	Release Date	|	Added to data.gov.uk	|	Publié le 	|	Date Published	|	Created	|	Veröffentlichungsdatum	|	-	|	Data caricamento	|	Дата первой публикации набора данных	|
@@ -93,7 +93,7 @@ The general metadata concepts are listed in the left-hand column (A.)
 2.8.M Title	|	title	|	title	|	Nom	|	title	|	title	|	title	|	title	|	title	|	Data title	|
 2.9.H Category	|	Category	|	National Statistics	|	Mots clés	|	"Subject Topic Category"	|	-	|	-	|	-	|	Area tematica	|	-	|
 2.9.M Category	|	groups	|	-	|	-	|	"subject topic_category"	|	-	|	-	|	-	|	field_areatematica	|	-	|
-3. Extent	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3. *Extent*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.1.H Spatial coverage	|	Spatial	|	Dataset Extent	|	Couverture géographique	|	Spatial	|	Geographical coverage	|	Geographische Abdeckung	|	-	|	-	|	-	|
 3.1.M Spatial coverage	|	spatial	|	-	|	Couverture géographique	|	spatial	|	geographical_coverage	|	(see below)	|	-	|	-	|	-	|
 3.2.H Spatial Type	|	-	|	-	|	-	|	Spatial Representation Type	|	-	|	Art der Form	|	-	|	-	|	-	|
@@ -134,10 +134,10 @@ The general metadata concepts are listed in the left-hand column (A.)
 3.19.M Data quality	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	dataQuality	|
 3.20.H Reference period	|	-	|	-	|	-	|	(=Temporal)	|	-	|	-	|	-	|	-	|	Отчетный период	|
 3.20.M Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	Reference period	|
-4. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+4. *Supplemental Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4.1.H Documentation URL - resource	|	Related Documents	|	Additional Resources	|	Annexe	|	(=Resource Type)	|	Documentation / URL	|	Website	|	-	|	Note	|	Гиперссылка (URL) на структуру набора данных	|
 4.1.M Documentation URL - resource	|	resources	|	Resource.descriptoin, Resource.url, Resource.format	|	Ressource Annexe	|	resource_type	|	url	|	url	|	-	|	field_note	|	-	|
-5. Distribution Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+5. *Distribution Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5.1.H Licence	|	License	|	Licence	|	Licence	|	Licence	|	Licence	|	Nutzungsbestimmungen	|	ライセンス	|	Licenza	|	Условия использования набора данных	|
 5.1.M Licence	|	license_id	|	license_id	|	Licence	|	licence_id	|	license_id	|	license_id	|	license_id	|	field_licenza	|	License	|
 5.2.H Copyright	|	-	|	-	|	-	|	(=Licence)	|	-	|	-	|	-	|	-	|	-	|
