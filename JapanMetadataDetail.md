@@ -1,8 +1,4 @@
-####United States Metadata
-
-**Where to Find Data**
-
-The U.S. is currently implementing a new Open Data Policy, as outlined in the [Managing Information as an Asset](http:/project-open-data.github.io) memorandum. On November, 9, 2013 you can access all public federal government data at data.gov, and government data owned/maintained by specific federal agencies by going to *agency.gov*/data.json. Until then, much, but not all, public government data will be available at these locations, described using the metadata below.
+####Japan Metadata
 
 **Metadata Details**
 
@@ -18,7 +14,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 1.6 Author Email	|	-	|	作成者のメールアドレス	|	-	|	author_email	|	No	|	email-address	|	-	|	(0,1)	|	-	|
 1.7 Maintainer	|	-	|	メンテナー	|	-	|	mainainer	|	No	|	See Usage Notes	|	See Usage Notes	|	(0,1)	|	Name should be formatted as First, Last in Japanese.	|
 1.8 Maintainer Email	|	-	|	メンテナーのメールアドレス	|	-	|	maintainer_email	|	No	|	email-address	|	-	|	(0,1)	|	-	|
-2. Dataset Identification	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2. *Dataset Identification*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.1 Unique Identifier	|	-	|	URLの一部	|	-	|	name	|	Yes	|	-	|	-	|	(1,1)	|	-	|
 2.2 Release Date	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.2.R Release Date	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
@@ -31,7 +27,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 2.7 Frequency of Update	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 2.8 Title	|	-	|	タイトル	|	-	|	title	|	Yes	|	string	|	-	|	(1,1)	|	-	|
 2.9 Category	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-3 Extent	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3 *Extent Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.1 Spatial coverage	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.2 Spatial Type	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.3 Spatial Coordinates	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
@@ -52,9 +48,9 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 3.18 Periodicity of data dissemination	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.19 Data quality	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.20.X Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-4. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+4. *Supplemental Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4.1 Documentation URL - resource	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-5. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+5. *Distribution Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5.1 Licence	|	-	|	ライセンス	|	-	|	license_id	|	Yes	|	-	|	-	|	(1,1)	|	Using CC License	|
 5.2 Copyright	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 5.3 Size	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
