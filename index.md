@@ -132,8 +132,8 @@ The general metadata concepts are listed in the left-hand column (A.)
 3.18.M Periodicity of data dissemination	|	-	|	-	|	-	|	-	|	accural_periodicity	|	-	|	-	|	-	|	-	|
 3.19.H Data quality	|	Data Quality	|	Openness score	|	-	|	-	|	-	|	-	|	-	|	-	|	Качество набора данных	|
 3.19.M Data quality	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	dataQuality	|
-3.X.H Reference period	|	-	|	-	|	-	|	(=Temporal)	|	-	|	-	|	-	|	-	|	Отчетный период	|
-3.X.M Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	Reference period	|
+3.20.H Reference period	|	-	|	-	|	-	|	(=Temporal)	|	-	|	-	|	-	|	-	|	Отчетный период	|
+3.20.M Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	Reference period	|
 4. Supplemental Information	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4.1.H Documentation URL - resource	|	Related Documents	|	Additional Resources	|	Annexe	|	(=Resource Type)	|	Documentation / URL	|	Website	|	-	|	Note	|	Гиперссылка (URL) на структуру набора данных	|
 4.1.M Documentation URL - resource	|	resources	|	Resource.descriptoin, Resource.url, Resource.format	|	Ressource Annexe	|	resource_type	|	url	|	url	|	-	|	field_note	|	-	|
