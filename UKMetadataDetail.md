@@ -57,7 +57,7 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 3.17 Temporal and spatial comparability	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.18 Periodicity of data dissemination	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 3.19 Data quality	|	Datasets are graded against Tim Berners Lee's Five Stars of Openness to give a rough indication of how open they are (as described on data.gov.uk), which is related to Data quality.	|	Openness score	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
-3.20.X Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.20 Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4. *Supplemental Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
 4.1 Documentation URL - resource	|	Related documents such as technical information about a dataset, developer documentation, etc.	|	Additional Resources	|	-	|	Resource.description, Resource.url, Resource.format	|	-	|	string	|	-	|	-	|	-	|
 5. *Distribution Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
