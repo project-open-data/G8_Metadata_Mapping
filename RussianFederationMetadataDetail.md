@@ -61,7 +61,6 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 
 Concept|'Other' (i.e. not one specific source|
 ------- | -------- |
-Concept  |	Other (e.g. Dublin Core, Foaf, RDF, RDFa Lite, Microdata)	|
 1. Contact information	|	-	|
 1.1 Person	|	dcterms:publisher	|
 1.2 Contact Email - Publisher	|	foaf:mbox	|
