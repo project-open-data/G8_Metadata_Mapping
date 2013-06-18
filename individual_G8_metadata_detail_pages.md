@@ -7,13 +7,21 @@ See below a link to the page of each of the G8. The page gives more detail about
 **Metadata Details**
 
 [United States](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/USMetadataDetail.md) 
+
 [United Kingdom](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/UKMetadataDetail.md)
+
 [France](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/FranceMetadataDetail.md) 
+
 [Canada](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/CanadaMetadataDetail.md)
+
 [European Union](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/EUMetadataDetail.md)
+
 [Germany](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/GermanyMetadataDetail.md)
+
 [Japan](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/JapanMetadataDetail.md)
+
 [Italy](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/ItalyMetadataDetail.md)
+
 [Russian Federation](https://github.com/nsinai/G8_Metadata_Mapping/blob/master/RussianFederationMetadataDetail.md)
 
 **Metadata Mapping**
