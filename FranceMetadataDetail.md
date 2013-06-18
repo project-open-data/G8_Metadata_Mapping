@@ -75,6 +75,59 @@ Concept|Description|Front-end (human-readable)|National metadata schema|Back-end
 
 **Mappings to Other Vocabs**
 
-Concept | Human-Readable Label | Metadata | CKAN | RDFa Lite 1.1 | Schema.org
-------- | ----- | -------- | -------- | -------- | ----- | -------
-
+Concept|CKAN - Level 1|CKAN - Level 2|CKAN - Level 3|Schema.org|DCAT|ADMS|VoID|Other (e.g. Dublin Core, Foaf, RDF, RDFa Lite)|
+------- | -------- | ----- | ---- | ---------- | ---------|-------|-------|-------|------
+1. *Contact information*  |	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+1.1 Person	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+1.2 Contact Email - Publisher	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+1.2 Contact Email - Dataset	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+1.3 Organisation (Owner)	|	-	|	-	|	-	|	sdo:Organization	|	foaf:Organization	|	-	|	-	|	dcterms:creator	|
+1.4 Publisher	|	-	|	-	|	-	|	sdo:publisher	|	dcterms:publisher	|	dcterms:publisher	|	-	|	-	|
+1.5 Author	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+1.6 Author Email	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+1.7 Maintainer	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+1.8 Maintainer Email	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2. *Dataset Identification*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2.1 Unique Identifier	|	-	|	-	|	-	|	-	|	dcterms:identifier	|	-	|	-	|	-	|
+2.2 Release Date	|	-	|	-	|	-	|	sdo:datePublished	|	dcterms:issued	|	dcterms:created	|	-	|	dcterms:issued	|
+2.2.R Release Date	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2.3 Modified	|	-	|	-	|	-	|	sdo:dateModified	|	dcterms:modified	|	dcterms:modified	|	-	|	http://data.gouv.fr/onto#statutChanged	|
+2.3.R Modified	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2.4 Last Updated	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2.4.R Last Updated	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+2.5 Description	|	-	|	-	|	-	|	sdo:description	|	dcterms:description	|	dcterms:description	|	-	|	dcterms:description	|
+2.6 Keyword	|	-	|	-	|	-	|	sdo:keywords	|	dcat:keyword	|	radion:keyword	|	-	|	dc:subject et http://data.gouv.fr/onto#eurovocSubject	|
+2.7 Frequency of Update	|	-	|	-	|	-	|	-	|	dcat:accuralPeriodicity 	|	-	|	-	|	dcterms:accrualPeriodicity	|
+2.8 Title	|	-	|	-	|	-	|	sdo:name	|	dcterms:title	|	rdfs:label	|	-	|	rdfs:label	|
+2.9 Category	|	-	|	-	|	-	|	sdo:about	|	dcat:theme	|	dcterms:subject	|	-	|	-	|
+3 *Extent*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.1 Spatial coverage	|	-	|	-	|	-	|	ds:spatialCoverage	|	dcterms:spatial	|	dcterms:spatial	|	-	|	dcterms:spatial	|
+3.2 Spatial Type	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.3 Spatial Coordinates	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.4 Geographic Region Name	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.5 Geographic Bounding Box - Lower Left Corner  	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.6 Bounding Box - Upper Right Corner  	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.7 Bounding Box - Coordinate Reference System  	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.8 Geographic Bounding Box - Dimensions  	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.9 Temporal coverage	|	-	|	-	|	-	|	ds:temporalCoverage	|	dcterms:temporal	|	-	|	-	|	http://data.gouv.fr/onto#dateDebut and http://data.gouv.fr/onto#dateFin	|
+3.10 Temporal coverage starts	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.11 Temporal coverage ends	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.12 Temporal granularity	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.13 Temporal granularity factor	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.14 Periodicity of data(set) collection	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.15 Periodicity of the production process	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.16 Periodicity of the estimates	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.17 Temporal and spatial comparability	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.18 Periodicity of data dissemination	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+3.19 Data quality	|	-	|	-	|	-	|	-	|	dcat:dataQuality	|	-	|	-	|	-	|
+3.20 Reference period	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+4. *Supplemental Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+4.1 Documentation URL - resource	|	-	|	-	|	-	|	-	|	dcat:dataDictionary 	|	-	|	-	|	http://data.gouv.fr/onto#RessourceAnnexe	|
+5. *Distribution Information*	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|	-	|
+5.1 Licence	|	-	|	-	|	-	|	-	|	dcterms:license	|	-	|	-	|	dcterms:license	|
+5.2 Copyright	|	-	|	-	|	-	|	sdo:copyrightHolder	|	-	|	-	|	-	|	-	|
+5.3 Size	|	-	|	-	|	-	|	sdo:contentSize	|	dcat:size	|	-	|	-	|	http://data.gouv.fr/onto#taille	|
+5.4 URL - resource	|	-	|	-	|	-	|	sdo:contentUrl	|	dcat:accessURL	|	adms:accessURL	|	-	|	http://data.gouv.fr/onto#fileUpload and http://data.gouv.fr/onto#accesURL	|
+5.5 Homepage URL	|	-	|	-	|	-	|	sdo:url	|	foaf:homepage	|	-	|	-	|	-	|
+5.6 Format - resource	|	-	|	-	|	-	|	sdo:encodingFormat	|	dcterms:format	|	dcterms:format	|	-	|	dcterms:format	|
+5.7 Language	|	-	|	-	|	-	|	sdo:inLanguage	|	dcterms:language	|	dcterms:language	|	-	|	dcterms:language	|
